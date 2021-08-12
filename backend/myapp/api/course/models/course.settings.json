@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "course",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "coursename": {
+      "type": "string"
+    },
+    "coursefield": {
+      "model": "coursefield",
+      "via": "courses"
+    }
+  }
+}

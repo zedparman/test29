@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/coursefields",
+      "handler": "coursefield.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/coursefields/count",
+      "handler": "coursefield.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/coursefields/:id",
+      "handler": "coursefield.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/coursefields",
+      "handler": "coursefield.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/coursefields/:id",
+      "handler": "coursefield.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/coursefields/:id",
+      "handler": "coursefield.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

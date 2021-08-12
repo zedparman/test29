@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coursefields",
+  "info": {
+    "name": "coursefield"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namedars": {
+      "type": "string"
+    },
+    "courses": {
+      "via": "coursefield",
+      "collection": "course"
+    }
+  }
+}
